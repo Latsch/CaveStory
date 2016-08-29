@@ -1,7 +1,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include "Graphics.h"
-
+#include "globalVar.h"
 
 /*
 	Graphics.h implementation
@@ -9,7 +9,7 @@
 */
 
 Graphics::Graphics() {
-	SDL_CreateWindowAndRenderer(640, 480, 0, &this->_window, &this->_renderer);
+	SDL_CreateWindowAndRenderer(globalVar::SCREEN_WIDTH, globalVar::SCREEN_HEIGHT, 0, &this->_window, &this->_renderer);
 	SDL_SetWindowTitle(this->_window, "CaveStory");
 };
 
