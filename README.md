@@ -1,3 +1,3 @@
 # CaveStory
 
-Simple game in C++
+Simple game in C++ (Work in Progress)
