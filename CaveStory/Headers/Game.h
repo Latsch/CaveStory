@@ -1,7 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "AnimateSprites.h"
+#include "Player.h"
 class Graphics; //Forward declaration of class Graphics, needed for draw()
 
 class Game {
@@ -13,7 +13,7 @@ private:
 	void draw(Graphics &graphics);
 	void update(float elapsedTime);
 
-	AnimateSprites _player;
+	Player _player;
 };
 
 #endif GAME_H
