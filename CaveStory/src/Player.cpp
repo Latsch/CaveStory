@@ -14,6 +14,7 @@ Player::Player(Graphics &graphics, float x, float y) :
 	graphics.loadImage("Content/Sprites/MyChar.png");
 	this->setupAnimation();
 	this->playAnimation("RunRight");
+	this->_facing = RIGHT;
 }
 
 
