@@ -29,6 +29,7 @@ void Game::gameLoop() {
 	SDL_Event event;
 
 	this->_player = Player(graphic, 100, 100);
+	this->_level = Level("map1",Vector(100, 100), graphic);
 
 
 	int LAST_UPDATE_TIME = SDL_GetTicks();
@@ -76,11 +77,13 @@ void Game::gameLoop() {
 void Game::draw(Graphics &graphics) {
 	graphics.clear();
 
+	this->_level.draw(graphics);
 	this->_player.draw(graphics);
 
 	graphics.flip();
 }
 
 void Game::update(float elapsedTime) {
-	_player.update(elapsedTime);
+	this->_player.update(elapsedTime);
+	this->_level.update(elapsedTime);
 }

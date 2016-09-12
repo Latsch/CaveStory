@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include "Player.h"
+#include "Level.h"
 class Graphics; //Forward declaration of class Graphics, needed for draw()
 
 class Game {
@@ -14,6 +15,7 @@ private:
 	void update(float elapsedTime);
 
 	Player _player;
+	Level _level;
 };
 
 #endif GAME_H
