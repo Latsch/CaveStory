@@ -4,6 +4,7 @@
 struct SDL_Window; //Forward declaration with pointers;
 struct SDL_Renderer;
 
+#include <SDL.h>
 #include <map>
 #include <string>
 
