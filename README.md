@@ -1,3 +1,3 @@
 # CaveStory
 
-Game in C++ (Work in Progress)
+Game in C++ (Work halted)
